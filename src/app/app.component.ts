@@ -23,10 +23,10 @@ import { Component } from '@angular/core';
                     ">
 
               {{i}} . {{team.baseball}}
-              <font color="red">{{first}}<strong *ngIf="first"> First Entry </strong></font>
-              <font color="geen">{{last}}<strong *ngIf="last"> Last Entry </strong></font>
-              <font color="blue">{{even}}<strong *ngIf="even"> Even Entry </strong></font>
-              <font color="magenta">{{odd}}<strong *ngIf="odd"> Odd Entry </strong></font>
+              <font color="red">|{{first}}<strong *ngIf="first">  First  </strong></font>
+              <font color="geen">|{{last}}<strong *ngIf="last">   Last   </strong></font>
+              <font color="blue">|{{even}}<strong *ngIf="even">   Even   </strong></font>
+              <font color="magenta">|{{odd}}<strong *ngIf="odd">  Odd    </strong></font>
 
         </li>
       </ul>
