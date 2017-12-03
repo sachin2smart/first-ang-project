@@ -26,3 +26,17 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Index.html configuration
+
+The configuration for index.html will be found at the the below location 
+ 
+	/first-ang-project/node_modules/@angular/cli/blueprints/ng/files/angular-cli.json
+
+Check 
+	"index": "index.html",
+
+We can route the request from that location to other as required.
+
+
