@@ -50,16 +50,4 @@ export class AppComponent {
           ];
 }
 
-/*
-     import { Sanitizer } from '@angular/core';
-
-    @Sanitizer({
-      selector : 'greet',
-      template : '<h2>{{titleForSanitizer}}</h2>',
-      styleUrls : ['./app.component.css']
-    })
-    class greet {
-       titleForSanitizer = 'Sanitizer exported.';
-    }
-*/
 
