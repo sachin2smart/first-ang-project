@@ -37,7 +37,7 @@ import { Component } from '@angular/core';
 
 // Assignment 3
   template: `
-    <h4 style="text-align:center;font-color:green"> On next assignmnet !!!</h4>
+    <h3 style="text-align:center;font-color:red"> On next assignment !!!</h3>
 `,
 
   styleUrls: ['./app.component.css']
