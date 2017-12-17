@@ -40,28 +40,37 @@ import { Component } from '@angular/core';
 //    <h3 style="text-align:center;font-color:red"> On next assignment !!!</h3>
 
 //   Assignment 4
+//  template : `
+//
+//    <h1 *ngIf="title" style="color:green;">* Title : {{title}}</h1>
+//
+//    <h1 *ngIf="!title_empty">* Title :  Sorry, the Title is not available !!!</h1>
+//
+//    <h1 *ngIf="!title; else myTemplate" style="color:yellow">Yellow color will not get asigned. This text will be ignored.</h1>
+//
+//    <ng-template #myTemplate><h1 style="color:blue">* Title : An empty title assigned.</h1></ng-template>
+//
+//    <div *ngIf="title; then trueTemplate else falseTemplate">
+//        This text will not be displayed.
+//    </div>
+//
+//    <ng-template #trueTemplate><h1 style="color:pink">* Title : A true title is assigned.</h1></ng-template>
+//
+//    <div *ngIf="!title; then trueTemplate else falseTemplate">
+//        This text will not be displayed.
+//    </div>
+//
+//    <ng-template #falseTemplate><h1 style="color:brown">* Title : A false title is assigned.</h1></ng-template>
+//
+//',
+
+//  Assignment : 5
   template : `
-
-    <h1 *ngIf="title" style="color:green;">* Title : {{title}}</h1>
-
-    <h1 *ngIf="!title_empty">* Title :  Sorry, the Title is not available !!!</h1>
-
-    <h1 *ngIf="!title; else myTemplate" style="color:yellow">Yellow color will not get asigned. This text will be ignored.</h1>
-
-    <ng-template #myTemplate><h1 style="color:blue">* Title : An empty title assigned.</h1></ng-template>
-
-    <div *ngIf="title; then trueTemplate else falseTemplate">
-        This text will not be displayed.
-    </div>
-
-    <ng-template #trueTemplate><h1 style="color:pink">* Title : A true title is assigned.</h1></ng-template>
-
-    <div *ngIf="!title; then trueTemplate else falseTemplate">
-        This text will not be displayed.
-    </div>
-
-    <ng-template #falseTemplate><h1 style="color:brown">* Title : A false title is assigned.</h1></ng-template>
-
+  <div [ngSwitch]="likes">
+    <div *ngSwitchCase = "'baseball'"> Display baseball content.</div>
+    <div *ngSwitchCase = "'football'"> Display football content.</div>
+    <div *ngSwitchCase = "'basketball'"> Display basketball content.</div>
+  </div>
 `,
 
   styleUrls: ['./app.component.css']
@@ -79,6 +88,7 @@ export class AppComponent {
               {baseball: 'Yankees'},
               {baseball: 'Jamees'},
           ];
+  likes = 'baseball';
 }
 
 
