@@ -62,17 +62,21 @@ import { Component } from '@angular/core';
 //
 //    <ng-template #falseTemplate><h1 style="color:brown">* Title : A false title is assigned.</h1></ng-template>
 //
-//',
+// ',
 
 //  Assignment : 5
-  template : `
-  <div [ngSwitch]="likes">
-    <div *ngSwitchCase = "'baseball'"> Display baseball content.</div>
-    <div *ngSwitchCase = "'football'"> Display football content.</div>
-    <div *ngSwitchCase = "'basketball'"> Display basketball content.</div>
-  </div>
-`,
+//  template : `
+//  <div [ngSwitch]="likes">
+//    <div *ngSwitchCase = "'baseball'"> Display baseball content.</div>
+//    <div *ngSwitchCase = "'football'"> Display football content.</div>
+//    <div *ngSwitchCase = "'basketball'"> Display basketball content.</div>
+//  </div>
+// `,
 
+  //  Assignment : 6
+  template : `
+    <h1> Templating basics has been learned.</h1>
+  `,
   styleUrls: ['./app.component.css']
 //  styles : [`
 //  h1 {color :brown;}
